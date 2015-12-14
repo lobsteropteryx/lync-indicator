@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BluetoothLyncAvailabilityPublisher.cs" />
+    <Compile Include="ConsoleLyncAvailabilityPublisher.cs" />
     <Compile Include="ILyncAvailabilityPublisher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Lync.Model;
+using LyncAvailabilityPublisher;
 
 namespace LyncIndicator
 {
     class LyncStatusWatcher
     {
         private LyncClient lyncClient;
+        private ILyncAvailabilityPublisher lyncAvailabilityPublisher;
 
-        public LyncStatusWatcher()
+        public LyncStatusWatcher(ILyncAvailabilityPublisher publisher)
         {
+            this.lyncAvailabilityPublisher = publisher;
             this.lyncClient = LyncClient.GetClient();
             lyncClient.Self.Contact.ContactInformationChanged +=
                 new EventHandler<ContactInformationChangedEventArgs>(SelfContact_ContactInformationChanged);
@@ -44,7 +47,7 @@ namespace LyncIndicator
             //Get the current availability value from Lync
             ContactAvailability currentAvailability = currentAvailability = 
                 (ContactAvailability)lyncClient.Self.Contact.GetContactInformation(ContactInformationType.Availability);
-            Console.WriteLine(currentAvailability.ToString());
+            this.lyncAvailabilityPublisher.Send(currentAvailability.ToString());
         }
 
         # endregion

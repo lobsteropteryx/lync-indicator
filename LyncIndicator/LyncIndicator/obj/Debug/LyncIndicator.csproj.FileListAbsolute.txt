@@ -7,3 +7,7 @@ c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\Microsoft.Office
 c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\Microsoft.Lync.Model.xml
 c:\develop\lync-indicator\LyncIndicator\LyncIndicator\obj\Debug\LyncIndicator.exe
 c:\develop\lync-indicator\LyncIndicator\LyncIndicator\obj\Debug\LyncIndicator.pdb
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\BluetoothLyncAvailabilityPublisher.dll
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\InTheHand.Net.Personal.dll
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\BluetoothLyncAvailabilityPublisher.pdb
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\InTheHand.Net.Personal.xml

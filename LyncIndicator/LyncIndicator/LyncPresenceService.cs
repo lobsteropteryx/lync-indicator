@@ -7,6 +7,8 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+using LyncAvailabilityPublisher;
 
 namespace LyncIndicator
 {
@@ -21,7 +23,18 @@ namespace LyncIndicator
 
         protected override void OnStart(string[] args)
         {
-            this.lyncStatusWatcher = new LyncStatusWatcher();
+            this.lyncStatusWatcher = new LyncStatusWatcher(this.getPublisher());
+        }
+
+        private ILyncAvailabilityPublisher getPublisher()
+        {
+            switch (ConfigurationManager.AppSettings["IndicatorType"])
+            {
+                case "Bluetooth":
+                    return new BluetoothLyncAvailabilityPublisher(ConfigurationManager.AppSettings["IndicatorAddress"]);
+                default:
+                    return new ConsoleLyncAvailabilityPublisher();
+            }
         }
 
         protected override void OnStop()

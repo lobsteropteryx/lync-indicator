@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LyncAvailabilityPublisher
 {
-    class BluetoothLyncAvailabilityPublisher : ILyncAvailabilityPublisher<bool>
+    public class BluetoothLyncAvailabilityPublisher : ILyncAvailabilityPublisher
     {
         private BluetoothAddress bluetoothAddress;
         private Guid serviceClassId;
