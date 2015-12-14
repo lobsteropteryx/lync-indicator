@@ -1,0 +1,9 @@
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\obj\Debug\LyncIndicator.csprojResolveAssemblyReference.cache
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\LyncIndicator.exe.config
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\LyncIndicator.exe
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\LyncIndicator.pdb
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\Microsoft.Lync.Model.dll
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\Microsoft.Office.Uc.dll
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\bin\Debug\Microsoft.Lync.Model.xml
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\obj\Debug\LyncIndicator.exe
+c:\develop\lync-indicator\LyncIndicator\LyncIndicator\obj\Debug\LyncIndicator.pdb
