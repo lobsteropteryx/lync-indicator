@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LyncAvailabilityPublisher
 {
-    interface ILyncAvailabilityPublisher
+    interface ILyncAvailabilityPublisher<T>
     {
-        void Send(string availability);
+        Task<T> Send(string availability);
     }
 }
